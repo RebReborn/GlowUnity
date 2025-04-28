@@ -1,0 +1,19 @@
+/* GlowUnity Main Styles */
+.glowunity-app-block {
+  padding: 20px 0;
+  margin: 30px 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.glowunity-products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* Dark mode support */
+[data-color-scheme="dark"] .glowunity-app-block {
+  border-color: rgba(255,255,255,0.1);
+}

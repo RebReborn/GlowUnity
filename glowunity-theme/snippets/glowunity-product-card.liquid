@@ -1,0 +1,16 @@
+<div class="glowunity-product-card" data-product-id="{{ product.id }}">
+  <a href="{{ product.url }}">
+    <img src="{{ product.featured_image | img_url: '300x' }}" alt="{{ product.title }}">
+    <h3>{{ product.title }}</h3>
+    <p>{{ product.price | money }}</p>
+  </a>
+</div>
+
+<style>
+  .glowunity-product-card {
+    border: 1px solid #e1e1e1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+</style>

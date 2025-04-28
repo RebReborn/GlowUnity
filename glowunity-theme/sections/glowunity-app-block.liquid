@@ -1,0 +1,31 @@
+<div class="glowunity-app-block" data-section-id="{{ section.id }}">
+  <h2>{{ section.settings.heading }}</h2>
+  <div class="glowunity-products-container" data-shop="{{ shop.permanent_domain }}">
+    <!-- Products will be injected here via JavaScript -->
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "GlowUnity Products",
+  "target": "section",
+  "class": "glowunity-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Featured Beauty Products"
+    },
+    {
+      "type": "range",
+      "id": "product_count",
+      "label": "Number of products to show",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 4
+    }
+  ]
+}
+{% endschema %}

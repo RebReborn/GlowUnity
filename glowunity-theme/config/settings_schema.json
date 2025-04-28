@@ -1,0 +1,22 @@
+[
+  {
+    "name": "GlowUnity Settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "GlowUnity Integration"
+      },
+      {
+        "type": "checkbox",
+        "id": "glowunity_enabled",
+        "label": "Enable GlowUnity Features",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "glowunity_api_key",
+        "label": "API Key (if needed)"
+      }
+    ]
+  }
+]
